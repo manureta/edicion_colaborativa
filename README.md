@@ -1,5 +1,5 @@
 # Edición colaborativa
-## Aportes de tecnicos forestales sobre pantaciones, sobre consulta de datos actualizados en la Dirección.
+## Aportes de tecnicos forestales sobre pantaciones, a partir de consulta de datos actualizados en la Dirección.
 
 ### Creación de Rol Tecnicos Forestales, permisos para realizar los aportes
 ``` 
