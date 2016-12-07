@@ -15,7 +15,8 @@ BEGIN
 	 AND member=( SELECT oid FROM pg_authid WHERE rolname=user) THEN
 		RAISE NOTICE 'El Usuario esta en el grupo "Tecnico Regional", sus aportes estan sujetos a aprobacion, %', NEW;
 		
-		INSERT INTO plantaciones_aportes SELECT null,NEW.* , user, TG_OP, now();
+		INSERT INTO plantaciones_aportes 
+			SELECT NEW.* , user, TG_OP, now();
 		RETURN OLD;
 	 ELSE
 		RAISE NOTICE 'El Usuario NO esta en el grupo "Tecnico Regional", puede editar la tabla';	

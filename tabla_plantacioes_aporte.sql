@@ -7,7 +7,6 @@
 
 CREATE TABLE plantaciones_aportes
 (
-  id serial,
   id_orig integer,
   error_id integer,
   estado_plantacion_id integer,
@@ -40,6 +39,7 @@ CREATE TABLE plantaciones_aportes
   usuario text,
   accion text,
   modificacion timestamp(0) without time zone DEFAULT NULL::timestamp without time zone,
+  id serial,
    CONSTRAINT plantaciones_aportes_pkey PRIMARY KEY (id),
   CONSTRAINT fk_40c678f4133de38e FOREIGN KEY (objetivo_plantacion_id)
       REFERENCES objetivos_plantacion (id) MATCH SIMPLE
