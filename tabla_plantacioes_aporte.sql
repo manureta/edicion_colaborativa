@@ -7,7 +7,8 @@
 
 CREATE TABLE plantaciones_aportes
 (
-  id integer,
+  id serial,
+  id_orig integer,
   error_id integer,
   estado_plantacion_id integer,
   estrato_desarrollo_id integer,
@@ -160,12 +161,12 @@ CREATE INDEX index_plantaciones_aportes_on_fuente_informacion_id
 -- Index: index_plantaciones_aportes_on_geom
 
 -- DROP INDEX index_plantaciones_aportes_on_geom;
-
+/*
 CREATE INDEX index_plantaciones_aportes_on_geom
   ON plantaciones_aportes
   USING btree
   (geom);
-
+*/
 -- Index: index_plantaciones_aportes_on_objetivo_plantacion_id
 
 -- DROP INDEX index_plantaciones_aportes_on_objetivo_plantacion_id;
