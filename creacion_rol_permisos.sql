@@ -11,7 +11,6 @@ GRANT SELECT, INSERT ON TABLE plantaciones TO GROUP tecnicos_regional;
 
 GRANT USAGE, SELECT, UPDATE  ON TABLE public.plantaciones_id_seq TO GROUP tecnicos_regional;
 
-GRANT USAGE, SELECT, UPDATE ON TABLE public.plantaciones_aportes_id_seq TO GROUP tecnicos_regional;
 
 
 
