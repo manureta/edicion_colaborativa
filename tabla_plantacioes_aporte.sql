@@ -228,3 +228,4 @@ GRANT SELECT,INSERT ON TABLE plantaciones_aportes TO GROUP tecnicos_regional;
 --GRANT SELECT ON TABLE public.plantaciones_aportes_id_seq TO GROUP tecnicos_regional;
 GRANT SELECT on pg_roles, pg_authid , pg_auth_members TO GROUP tecnicos_regional;
 
+GRANT USAGE, SELECT, UPDATE ON TABLE public.plantaciones_aportes_id_seq TO GROUP tecnicos_regional;
